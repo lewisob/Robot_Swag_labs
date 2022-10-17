@@ -7,6 +7,7 @@ lbl_error = "[data-test=\"error\"]"
 # Products page
 lnk_shopping_cart = "id=shopping_cart_container"
 lbl_title = ".title"
+btn_add_to_cart = "\"Add to cart\""
 
 # Cart page
 btn_checkout = "id=checkout"
