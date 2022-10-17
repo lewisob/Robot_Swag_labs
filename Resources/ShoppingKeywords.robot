@@ -12,11 +12,12 @@ Add products to cart
     Click    ${lnk_shopping_cart}
 
 Complete purchase
-    [Arguments]    ${first_name}    ${last_name}    ${post_code}
+    [Arguments]    ${first_name}    ${last_name}    ${post_code}    ${num_products}
     Click    ${btn_checkout}
     Type Text    ${txt_first_name}    ${first_name}
     Type Text    ${txt_last_name}    ${last_name}
     Type Text    ${txt_zip_code_name}    ${post_code}
     Click    ${btn_continue}
+    Get Element Count    ${lnk_product_name}    ==    ${num_products}
     Click    ${btn_finish}
     Get Element States    ${img_pony_express}    contains    visible

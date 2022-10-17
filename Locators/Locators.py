@@ -19,6 +19,7 @@ txt_zip_code_name = "id=postal-code"
 btn_continue = "id=continue"
 
 # Checkout step two page
+lnk_product_name = ".cart_item"
 btn_finish = "id=finish"
 
 # Checkout complete page
