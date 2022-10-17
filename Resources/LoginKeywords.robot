@@ -7,7 +7,7 @@ Submit log in details
     [Arguments]    ${username}    ${password}
     Log    Logging in as user ${username}
     Type Text    ${txt_username}    ${username}
-    Type Secret    ${txt_password}    ${password}
+    Type Secret    ${txt_password}    $password
     Click    ${btn_login}
 
 User should be successfully logged in
