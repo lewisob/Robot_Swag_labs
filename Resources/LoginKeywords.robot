@@ -15,3 +15,9 @@ User should be successfully logged in
     Get Url    ==    https://www.saucedemo.com/inventory.html
     Get Text    ${lbl_title}    ==    PRODUCTS
     Get Element States    ${lnk_shopping_cart}    contains    visible
+
+User should should be locked out
+    Log    "User should should be locked out"
+    Get Url    ==    https://www.saucedemo.com/
+    Get Text    ${lbl_error}    ==    Epic sadface: Sorry, this user has been locked out.
+    Get Element Count    ${lnk_shopping_cart}    ==    0
