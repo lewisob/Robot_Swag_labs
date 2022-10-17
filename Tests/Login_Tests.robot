@@ -11,3 +11,4 @@ ${PASSWORD}    secret_sauce
 Log in as valid user
     Open browser to sauce login page
     Submit log in details    ${VALID_USERNAME}    ${PASSWORD}
+    User should be successfully logged in

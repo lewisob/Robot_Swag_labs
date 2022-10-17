@@ -5,6 +5,7 @@ btn_login = "id=login-button"
 
 # Products page
 lnk_shopping_cart = "id=shopping_cart_container"
+lbl_title = ".title"
 
 # Cart page
 btn_checkout = "id=checkout"
