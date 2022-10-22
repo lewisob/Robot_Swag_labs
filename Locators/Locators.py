@@ -11,6 +11,7 @@ btn_add_to_cart = "\"Add to cart\""
 
 # Cart page
 btn_checkout = "id=checkout"
+btn_remove = "\"Remove\""
 
 # Checkout step one page
 txt_first_name = "id=first-name"

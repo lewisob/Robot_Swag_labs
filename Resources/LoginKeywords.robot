@@ -22,6 +22,12 @@ User should should be locked out
     Get Text    ${lbl_error}    ==    Epic sadface: Sorry, this user has been locked out.
     Get Element Count    ${lnk_shopping_cart}    ==    0
 
+Username and password should not match
+    Log    Username and password should not match
+    Get Url    ==    https://www.saucedemo.com/
+    Get Text    ${lbl_error}    ==    Epic sadface: Username and password do not match any user in this service
+    Get Element Count    ${lnk_shopping_cart}    ==    0
+
 User is logged in
     Log    User is logged in
     Submit log in details    standard_user    secret_sauce
