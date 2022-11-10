@@ -28,7 +28,7 @@ Complete purchase
     Click    ${btn_continue}
     Get Element Count    ${lnk_product_name}    ==    ${num_products}
     Click    ${btn_finish}
-    Get Element States    ${img_pony_express}    contains    visible
+    Wait For Elements State    ${img_pony_express}    visible
 
 Only ${num_products} products should remain in cart
     Log    Only ${num_products} products should remain in cart
